@@ -1,0 +1,14 @@
+<resources>
+    <!-- Other existing styles -->
+    <style name="GameButtonStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">#FFFFFF</item>
+    </style>
+</resources>
+
+
+

@@ -1,0 +1,161 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Turn Indicator -->
+        <TextView
+            android:id="@+id/tvTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Red's Turn"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="32dp" />
+
+        <!-- Scoreboard -->
+        <LinearLayout
+            android:id="@+id/scoreBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tvRedScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red: 0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginEnd="32dp" />
+
+            <TextView
+                android:id="@+id/tvBlueScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue: 0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark" />
+        </LinearLayout>
+
+        <!-- Red Player Buttons -->
+        <LinearLayout
+            android:id="@+id/layoutRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnRockRed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/player_red"
+                android:text="Rock" />
+
+            <Button
+                android:id="@+id/btnPaperRed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:text="Paper"
+                android:backgroundTint="@color/player_red"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnScissorsRed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/player_red"
+                android:layout_height="100dp"
+                android:text="Scissors" />
+        </LinearLayout>
+
+        <!-- Blue Player Buttons -->
+        <LinearLayout
+            android:id="@+id/layoutBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnRockBlue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/player_blue"
+                android:text="Rock" />
+
+            <Button
+                android:id="@+id/btnPaperBlue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/player_blue"
+                android:layout_height="100dp"
+                android:text="Paper"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnScissorsBlue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/player_blue"
+                android:text="Scissors" />
+        </LinearLayout>
+
+        <!-- Result Display -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="32dp" />
+
+        <!-- Restart Button -->
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white" />
+
+        <!-- Home Button -->
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
