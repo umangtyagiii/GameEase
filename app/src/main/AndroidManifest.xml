@@ -25,19 +25,30 @@
         </activity>
 
         <!-- Main menu activity -->
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
 
         <!-- Rules Activities -->
-        <activity android:name=".TicTacToeRulesActivity" />
-        <activity android:name=".RPSRulesActivity" />
-        <activity android:name=".MemoryMatchRulesActivity" />
-        <activity android:name=".DotsBoxesRulesActivity" />
-        <activity android:name=".NumberNimRulesActivity" />
-        <activity android:name=".TicTacToeGameActivity" />
-        <activity android:name=".RPSGameActivity" />
-        <activity android:name=".MemoryMatchGameActivity" />
-        <activity android:name=".DotsBoxesGameActivity" />
-        <activity android:name=".NumberNimGameActivity" />
+        <activity android:name=".TicTacToeRulesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RPSRulesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MemoryMatchRulesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DotsBoxesRulesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NumberNimRulesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TicTacToeGameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RPSGameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MemoryMatchGameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DotsBoxesGameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NumberNimGameActivity"
+            android:screenOrientation="portrait"/>
 
 
 
